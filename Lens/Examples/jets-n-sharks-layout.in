@@ -1,0 +1,10 @@
+setObj unitCellSize 20
+
+resetPlot
+plotRow 2 n Name 9
+plotRow 1 n Name 9 b 4 n Age 3
+plotRow 2 f
+plotRow 3 b 2 n Education 1 b 2 n Instance 9 b 2 n Job 1
+plotRow 2 f
+plotRow 1 b 6 n Gang 2 b 4 n Marital 3
+drawUnits
