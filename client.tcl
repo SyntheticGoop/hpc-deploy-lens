@@ -1,0 +1,1 @@
+source $lensdir/Examples/rand10x40.in
