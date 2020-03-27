@@ -43,42 +43,12 @@ user_id = 'user_id'
 
 # Queue name
 # queue = 'q32'
-queue = 'q32'
+queue = 'q32_76'
 
 # Walltime (HH:MM:SS): Maximum duration to execute
 # before terminating the job
 # walltime = '00:15:00'
 walltime = '00:15:00'
-
-# Allowed hosts: List of nodes to run on.
-only_in = [
-  'hpc-n069',
-  'hpc-n065',
-  'hpc-n052',
-  'hpc-n059',
-  'hpc-n061',
-  'hpc-n062',
-  'hpc-n015',
-  'hpc-n068',
-  'hpc-n003',
-  'hpc-n067',
-  'hpc-n047',
-  'hpc-n048',
-  'hpc-n070',
-  'hpc-n013',
-  'hpc-n007',
-  'hpc-n011',
-  'hpc-n012',
-  'hpc-n016',
-  'hpc-n021',
-  'hpc-n022',
-  'hpc-n023',
-  'hpc-n024',
-  'hpc-n025',
-  'hpc-n026',
-  'hpc-n033',
-  'hpc-n018'
-]
 
 
 
