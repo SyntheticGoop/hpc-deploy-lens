@@ -39,7 +39,7 @@ job = 'LENS'
 
 # Project Funding Code Eg. eee_userid
 # user_id = 'user_id'
-user_id = 'user_id'
+user_id = 'hpc_admin'
 
 # Queue name
 # queue = 'q32'
@@ -62,7 +62,6 @@ if __name__ == "__main__":
     server=server,
     client=client,
     workdir=workdir,
-    only_in=only_in,
     cpu=cpu,
     job=job,
     user_id=user_id,

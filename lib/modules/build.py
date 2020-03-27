@@ -33,7 +33,7 @@ def from_folder(root):
   return here
 
 
-def build(cache, lens, server, client, workdir, cpu, job, user_id, queue, walltime, only_in):
+def build(cache, lens, server, client, workdir, cpu, job, user_id, queue, walltime):
   jobdir = from_folder(workdir)('$PBS_JOBID')
   cachedir = from_folder(jobdir)('.cache')
   logs = from_folder(jobdir)('logs')
@@ -55,7 +55,6 @@ def build(cache, lens, server, client, workdir, cpu, job, user_id, queue, wallti
   pbs.add('#PBS -e %s/pbs.err' % (logs))
   pbs.add('#PBS -l walltime=%s' % (walltime))
   pbs.add('#PBS -l select=%s:ncpus=1' % (cpu))
-  # pbs.add('#PBS -l select=%s:ncpus=1:host=%s' % (cpu, concat("+")(*only_in)))
 
 
   tcl_cfg = linewriter()
