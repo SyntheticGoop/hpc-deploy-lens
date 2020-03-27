@@ -84,6 +84,8 @@ only_in = [
 
 # Runs the job
 if __name__ == "__main__":
+  call('mkdir -p %s' % cache, shell=True)
+
   pbs = build(
     cache=cache,
     lens=lens,
@@ -97,8 +99,6 @@ if __name__ == "__main__":
     queue=queue,
     walltime=walltime,
   )
-
-  call('mkdir -p %s' % cache, shell=True)
 
   if '--output-only' not in argv:
     call('qsub %s' % pbs, shell=True)
